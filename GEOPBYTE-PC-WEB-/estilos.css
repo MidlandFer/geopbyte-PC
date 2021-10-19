@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+:root{
+    --celeste:#9caebf;
+    --gris:#181f2a;
+    --sky-blue: #87CEFA;
+    --steel-blue: #4682B4;
+    
+    --degradado:linear-gradient(90deg, var(--celeste),var(--gris));
+    }
+
+*::selection {
+
+    background: var(--celeste);
+    color: white;
+}
+html {
+    font-size: 80%;
+    overflow: auto;
+}
+
+body{
+
+background: whitesmoke;
+
+}
+
+header{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #9caebf;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
+    padding: 0.1rem 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
