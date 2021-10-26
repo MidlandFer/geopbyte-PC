@@ -25,6 +25,14 @@ body{
 
 background: whitesmoke;
 
+section {
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 7.5 rem;
+     padding-bottom: 2rem;
+
+}
+
 }
 
 header{ 
@@ -34,7 +42,7 @@ header{
     width: 100%;
     background-color: #9caebf;
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .1);
-    padding: 0.2rem 2%;
+    padding: 0.1rem 1%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,7 +50,7 @@ header{
 
 }
 header .logo{
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: var(--sky-blue);
 
 }
@@ -52,8 +60,8 @@ header .logo span{
 }
 
 header.navbar a{
-    font-size: 1.8rem;
-    margin-left: 1rem;
+    font-size: 3rem;
+    margin: 1.8rem 0;
     color: var(--celeste);
 }
 
@@ -73,6 +81,16 @@ header label{
     cursor: pointer;
     visibility: hidden;
     opacity: 0;
+}
+.principal-1 {
+display: flex;
+align-items: center;
+justify-content: center;
+background: url(../imagenes\Teclado-pc-1.png) no-repeat;
+background-size: cover;
+background-position: initial;
+
+
 }
 
 @media (max-width: 1200px) {
@@ -98,6 +116,7 @@ header label{
         transform-origin: top;
         transform: scaleY(0);
         opacity: 0;
+        transition: 0.2s linear;
 
     }
 
@@ -115,7 +134,7 @@ header label{
     header input:checked ~ label::before{
         content: '\f00d' ;
     }
-
+ 
 }
 
 @media(max-width:450px){
@@ -135,7 +154,7 @@ header label{
     border: none;
     text-transform: capitalize;
 }
-
+/*
 .principal-1 {
 
     margin-top: 150px;
@@ -145,7 +164,7 @@ header label{
 
 .principal-1 .content-1 {
    
-    width: 100%;
+    width: auto;
     top: 0;
     left: 0;
     
@@ -154,22 +173,32 @@ header label{
     font-size: 20px;
     
     
-}
+
 .content-1{
 
-    width: 100%;
+    width: 800px;
+    height: auto;
 }
-    
-]
+  */  
+
 
 div.content-1 {
 
-width: 80%;
+width: 800px;
+height: auto;
 
-}
 
-.content-1 img {
-    opacity: 0.9;
+
+
+ img .teclado{
+    
+    height: 100%;
+    max-width: auto;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 500px;
+    box-sizing: border-box;
+    
 }
 
 h3 {
