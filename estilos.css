@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-
+/* declarando fuente de Texto*/
 
 :root{
     --celeste:#9caebf;
@@ -9,27 +9,31 @@
     
     --degradado:linear-gradient(90deg, var(--celeste),var(--gris));
     }
-
+/*funciones declarando colores*/
+ 
 *::selection {
 
     background: var(--celeste);
     color: white;
 }
+/*definiendo color con pseudo elemento*/
 
 html {
     font-size: 80%;
     overflow:auto;
 }
-
+/*definiendo etiqueta general*/
 body{
 
 background: whitesmoke;
+
+/*definiendo color de fondo*/
 
 section {
     min-height: 100vh;
     padding: 0 9%;
     padding-top: 7.5 rem;
-     padding-bottom: 2rem;
+    padding-bottom: 2rem;
 
 }
 
@@ -49,31 +53,39 @@ header{
     z-index: 1000;
 
 }
+/*posicionando, alineando y dando sombra a elelmentos del menú principal*/
+
+/*
 header .logo{
     font-size: 3rem;
     color: var(--sky-blue);
 
-}
+    }
+definiendo color con pseudo elemento y tamaño de fuente en el LOGO*/    
+
 header .logo span{
     color: var(--celeste);
 
 }
+/*definiendo color del menú con variable*/
 
 header.navbar a{
     font-size: 3rem;
     margin: 1.8rem 0;
     color: var(--celeste);
 }
+/*definiendo tamaño de fuente, posicionamiento y color de barra de navegación en etiquetas de enlace*/
 
 header .navbar a:hover{
     color: var(--steel-blue);
 
 }
+/*creando efecto de selección en menú*/
 
 header input{
     display: none;
 }
-
+/*desapareciendo el recuadro de check box*/
 
 header label{
     font-size: 2rem;
@@ -82,7 +94,8 @@ header label{
     visibility: hidden;
     opacity: 0;
 }
-.principal-1 {
+/* definiendo tamaño, color con variable, visibilidad y función del cursor */
+.inicio {
 display: flex;
 align-items: center;
 justify-content: center;
@@ -98,12 +111,15 @@ background-position: initial;
         font-size: 80%;
     }
 }
- 
+ /*definiendo menú responsiv, adaptando a PC escritorio*/
+
 @media (max-width: 768px) {
     header label {
         visibility: visible;
         opacity: 1;
     }
+/*definiendo menú responsiv, adaptando a Tablet*/
+
     header .navbar{
         position: absolute;
         top: 100%;
@@ -119,22 +135,25 @@ background-position: initial;
         transition: 0.2s linear;
 
     }
+/*definiendo opciones de menú responsiv, adaptando a Tablet*/
 
     header .navbar a{
     display: block;
     margin: 2rem 0;
     font-size: 1rem;
 }
+/* definiendo selector y ordenando en bloque etiquetas de enlace*/
 
     header input:checked ~ .navbar{
     transform: scaleY(1);
     opacity: 1;
     }
+/*combinación de check box con barra de navegación en Tablet*/
 
     header input:checked ~ label::before{
         content: '\f00d' ;
     }
- 
+ /*combinación de check box con psudo elemento, se agraga signo X*/
 }
 
 @media(max-width:450px){
@@ -143,6 +162,7 @@ background-position: initial;
 
     }
 }
+/*definiendo opciones de menú responsiv, adaptando a Móviles*/
 
 *{
 
@@ -154,15 +174,16 @@ background-position: initial;
     border: none;
     text-transform: capitalize;
 }
-/*
-.principal-1 {
+/*Configuración general*/
+
+.inicio {
 
     margin-top: 150px;
     margin-left: 10px;
 
 }
 
-.principal-1 .content-1 {
+.inicio .content {
    
     width: auto;
     top: 0;
@@ -174,7 +195,7 @@ background-position: initial;
     
     
 
-.content-1{
+.content{
 
     width: 800px;
     height: auto;
@@ -182,7 +203,7 @@ background-position: initial;
   */  
 
 
-div.content-1 {
+div.content {
 
 width: 800px;
 height: auto;
